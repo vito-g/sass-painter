@@ -11,6 +11,19 @@ select {
   font-family: "Segoe UI", sans-serif;
 }
 
+i {
+  font-size: 15px;
+  margin: 0 7px 0 0;
+  color: #009CFF;
+}
+i ~ a {
+  font-size: 12px;
+  font-family: "Segoe UI", sans-serif;
+  color: grey;
+  text-decoration: none;
+  margin: 0 15px 0 0;
+}
+
 li {
   display: inline-block;
 }
