@@ -122,7 +122,45 @@ li {
 
     .features-container {
       @include features-container;
+      position: relative;
+
+      #download {
+
+      }
+
+      #buy {
+        width: 400px;
+        height: 440px;
+        background-color: black;
+        margin-top: 20px;
+        position: absolute;
+        right: 0;
+      }
     }
+  }
+
+  nav {
+    height: 60px;
+    background-color: #E6E6E6;
+
+    ul {
+      text-align: center;
+
+      li {
+        font-size: 18px;
+        padding: 17px 24px 18px;
+
+        &:hover {
+          background-color: #EFEFEF;
+        }
+
+        a {
+          text-decoration: none;
+          color: #333333;
+        }
+      }
+    }
+
   }
 
 }

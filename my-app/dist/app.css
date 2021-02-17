@@ -87,4 +87,31 @@ li {
   border: 1px solid black;
   margin: auto;
   height: 460px;
+  position: relative;
+}
+#whole-container .jumbotron .features-container #buy {
+  width: 400px;
+  height: 440px;
+  background-color: black;
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+}
+#whole-container nav {
+  height: 60px;
+  background-color: #E6E6E6;
+}
+#whole-container nav ul {
+  text-align: center;
+}
+#whole-container nav ul li {
+  font-size: 18px;
+  padding: 17px 24px 18px;
+}
+#whole-container nav ul li:hover {
+  background-color: #EFEFEF;
+}
+#whole-container nav ul li a {
+  text-decoration: none;
+  color: #333333;
 }
