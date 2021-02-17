@@ -11,8 +11,18 @@
   width: 1200px;
   height: 90px;
   background-color: black;
-  border: 1px solid white;
   margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#whole-container header .stripe-container-top, #whole-container footer .stripe-container-top {
+  border: 1px solid white;
+  height: 40px;
+}
+#whole-container header .stripe-container-bottom, #whole-container footer .stripe-container-bottom {
+  border: 1px solid white;
+  height: 50px;
 }
 #whole-container .jumbotron {
   height: 460px;
