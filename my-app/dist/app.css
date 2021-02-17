@@ -1,9 +1,22 @@
-body {
-  background-color: red;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+#whole-container {
+  font-family: "Segoe UI", sans-serif;
+}
+#whole-container header .stripe-container, #whole-container footer .stripe-container {
+  width: 1200px;
+  height: 90px;
+  background-color: black;
+  border: 1px solid white;
+  margin: auto;
+}
+#whole-container .jumbotron {
+  height: 460px;
+  width: 1200px;
+  border: 1px solid black;
+  margin: auto;
 }
