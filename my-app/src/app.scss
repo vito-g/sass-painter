@@ -1,9 +1,11 @@
 @import "reset";
+@import "variables";
 
 @mixin features-container {
   width: 1200px;
   border: 1px solid black;
   margin: auto;
+  height: 460px;
 }
 
 @mixin features-stripe {
@@ -94,7 +96,7 @@ li {
           }
 
           li {
-            padding: 0 25px;
+            padding: 3px 25px 0;
             font-size: 14px;
             line-height: 50px;
 
@@ -113,9 +115,14 @@ li {
     }
   }
 
+
+
   .jumbotron {
-    height: 460px;
-    @include features-container;
+    background-image: url($jumbotron-image);
+
+    .features-container {
+      @include features-container;
+    }
   }
 
 }

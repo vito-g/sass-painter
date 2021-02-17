@@ -69,7 +69,7 @@ li {
   margin: auto;
 }
 #whole-container header .stripe-container-bottom li, #whole-container footer .stripe-container-bottom li {
-  padding: 0 25px;
+  padding: 3px 25px 0;
   font-size: 14px;
   line-height: 50px;
 }
@@ -80,8 +80,11 @@ li {
   font-family: "Segoe UI", sans-serif;
 }
 #whole-container .jumbotron {
-  height: 460px;
+  background-image: url("../img/jumbotrone.jpg");
+}
+#whole-container .jumbotron .features-container {
   width: 1200px;
   border: 1px solid black;
   margin: auto;
+  height: 460px;
 }
