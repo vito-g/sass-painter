@@ -4,25 +4,48 @@
   padding: 0;
 }
 
+li {
+  display: inline-block;
+}
+
 #whole-container {
   font-family: "Segoe UI", sans-serif;
 }
+#whole-container header, #whole-container footer {
+  background-color: black;
+  height: 90px;
+}
 #whole-container header .stripe-container, #whole-container footer .stripe-container {
   width: 1200px;
-  height: 90px;
-  background-color: black;
   margin: auto;
   color: white;
   display: flex;
   flex-direction: column;
 }
 #whole-container header .stripe-container-top, #whole-container footer .stripe-container-top {
-  border: 1px solid white;
+  border: 1px solid red;
   height: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+#whole-container header .stripe-container-top #contact, #whole-container footer .stripe-container-top #contact {
+  width: 480px;
+  border: 1px solid white;
 }
 #whole-container header .stripe-container-bottom, #whole-container footer .stripe-container-bottom {
-  border: 1px solid white;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid red;
   height: 50px;
+}
+#whole-container header .stripe-container-bottom #logotype, #whole-container footer .stripe-container-bottom #logotype {
+  width: 120px;
+  border: 1px solid white;
+}
+#whole-container header .stripe-container-bottom li, #whole-container footer .stripe-container-bottom li {
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 50px;
 }
 #whole-container .jumbotron {
   height: 460px;

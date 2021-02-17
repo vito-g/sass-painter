@@ -8,17 +8,22 @@
 
 @mixin features-stripe {
   width: 1200px;
-  height: 90px;
-  background-color: black;
+  // background-color: black;
   // border: 1px solid white;
   margin: auto;
   color: white;
+}
+
+li {
+  display: inline-block;
 }
 
 #whole-container {
   font-family: "Segoe UI", sans-serif;
 
   header, footer {
+    background-color: black;
+    height: 90px;
 
     .stripe-container {
         @include features-stripe;
@@ -26,15 +31,33 @@
         flex-direction: column;
 
         &-top {
-
-          border: 1px solid white;
+          border: 1px solid red;
           height: 40px;
+          display: flex;
+          justify-content: flex-end;
+
+          #contact {
+            width: 480px;
+            border: 1px solid white;
+          }
         }
 
         &-bottom {
-          
-          border: 1px solid white;
+          display: flex;
+          justify-content: flex-start;
+          border: 1px solid red;
           height: 50px;
+
+          #logotype {
+            width: 120px;
+            border: 1px solid white;
+          }
+
+          li {
+            padding: 0 25px;
+            font-size: 14px;
+            line-height: 50px;
+          }
         }
     }
   }
