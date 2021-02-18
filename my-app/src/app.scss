@@ -45,6 +45,7 @@ i {
 
 li {
   display: inline-block;
+  cursor: pointer;
 }
 
 #whole-container {
@@ -100,7 +101,6 @@ li {
             padding: 3px 25px 0;
             font-size: 14px;
             line-height: 50px;
-            cursor: pointer;
 
             > select {
                 @include custom-select;
@@ -118,7 +118,50 @@ li {
       position: relative;
 
       #download {
+        width: calc(100% - 700px);
+        margin-top: 50px;
+        position: absolute;
+        right: 400px;
+        font-size: 29.5px;
 
+        span {
+          color: #B936B2;
+        }
+
+        span#description {
+          font-size: 21px;
+          color: black;
+        }
+
+        ul {
+          margin: 25px 0 35px;
+
+          li {
+            font-size: 17px;
+            display: block;
+            line-height: 2;
+
+            i {
+              color: grey;
+              font-size: 12px;
+              line-height: 2;
+            }
+          }
+        }
+
+        #trial {
+          width: 251px;
+          height: 62px;
+          border: 2px solid black;
+          display: flex;
+          align-items: center;
+          padding: 20px;
+
+          .left {
+            font-size: 14px;
+            line-height: 100%;
+          }
+        }
       }
 
       #buy {

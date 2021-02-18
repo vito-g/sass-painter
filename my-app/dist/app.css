@@ -20,6 +20,7 @@ i ~ a {
 
 li {
   display: inline-block;
+  cursor: pointer;
 }
 
 #whole-container {
@@ -67,7 +68,6 @@ li {
   padding: 3px 25px 0;
   font-size: 14px;
   line-height: 50px;
-  cursor: pointer;
 }
 #whole-container header .stripe-container-bottom li > select, #whole-container footer .stripe-container-bottom li > select {
   border: none;
@@ -85,6 +85,45 @@ li {
   margin: auto;
   height: 460px;
   position: relative;
+}
+#whole-container .jumbotron .features-container #download {
+  width: calc(100% - 700px);
+  margin-top: 50px;
+  position: absolute;
+  right: 400px;
+  font-size: 29.5px;
+}
+#whole-container .jumbotron .features-container #download span {
+  color: #B936B2;
+}
+#whole-container .jumbotron .features-container #download span#description {
+  font-size: 21px;
+  color: black;
+}
+#whole-container .jumbotron .features-container #download ul {
+  margin: 25px 0 35px;
+}
+#whole-container .jumbotron .features-container #download ul li {
+  font-size: 17px;
+  display: block;
+  line-height: 2;
+}
+#whole-container .jumbotron .features-container #download ul li i {
+  color: grey;
+  font-size: 12px;
+  line-height: 2;
+}
+#whole-container .jumbotron .features-container #download #trial {
+  width: 251px;
+  height: 62px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+#whole-container .jumbotron .features-container #download #trial .left {
+  font-size: 14px;
+  line-height: 100%;
 }
 #whole-container .jumbotron .features-container #buy {
   width: 400px;
