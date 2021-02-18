@@ -16,11 +16,12 @@
   color: white;
 }
 
-select {
+@mixin custom-select {
     border:none;
     background-color: inherit;
     color: white;
     font-family: "Segoe UI", sans-serif;
+    cursor: pointer;
     // -webkit-appearance: none;
     // -moz-appearance: none;
     // appearance: none;
@@ -102,15 +103,7 @@ li {
             cursor: pointer;
 
             > select {
-                border:none;
-                background-color: inherit;
-                color: white;
-                font-family: "Segoe UI", sans-serif;
-                cursor: pointer;
-                // -webkit-appearance: none;
-                // -moz-appearance: none;
-                // appearance: none;
-                // -ms-appearance: none;
+                @include custom-select;
             }
           }
         }
