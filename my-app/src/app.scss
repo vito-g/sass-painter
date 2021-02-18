@@ -31,6 +31,7 @@ i {
   font-size: 15px;
   margin: 0 7px 0 0;
   color: #009CFF;
+  cursor: pointer;
 
   ~ a {
     font-size: 12px;
@@ -40,8 +41,6 @@ i {
     margin: 0 20px 0 0;
   }
 }
-
-
 
 li {
   display: inline-block;
@@ -87,6 +86,7 @@ li {
           #logotype {
             width: 120px;
             display: flex;
+            cursor: pointer;
             // border: 1px solid white;
 
             img {
@@ -99,12 +99,14 @@ li {
             padding: 3px 25px 0;
             font-size: 14px;
             line-height: 50px;
+            cursor: pointer;
 
             > select {
                 border:none;
                 background-color: inherit;
                 color: white;
                 font-family: "Segoe UI", sans-serif;
+                cursor: pointer;
                 // -webkit-appearance: none;
                 // -moz-appearance: none;
                 // appearance: none;
@@ -114,8 +116,6 @@ li {
         }
     }
   }
-
-
 
   .jumbotron {
     background-image: url($jumbotron-image);
@@ -152,6 +152,7 @@ li {
 
         &:hover {
           background-color: #EFEFEF;
+          border-bottom: 3px solid black;
         }
 
         a {
